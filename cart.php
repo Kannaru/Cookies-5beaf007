@@ -21,7 +21,7 @@
     <input type="submit" value="Verstuur" name="submit">
 </form>
 <?php
-if(isset($_POST["submit"])){
+if(isset($_POST["submit"])) {
     setcookie("gekozenkoek", $_POST["deinput"]);
     echo ("Gekozen item: " . $_COOKIE["gekozenkoek"]);
 }
